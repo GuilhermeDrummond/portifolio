@@ -8,95 +8,96 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background"></div>
-    <div class="content"></div>
     <header>
-
-        <div class="cabeçalho">
-            <h2>GD</h2>
-            <ul class="socialMedias">
-                <li>git</li>
-                <li>linkedin</li>
-                <li>insta</li>
-            </ul>
-        </div>
         <div class="apresentação">
+            <div class="textHeaderDiv">
+                <h1>Nice to meet you!</h1>
+                <h2>I'm Guilherme Drummond.</h2>
+                <p>I have a bachelor's degree in <br>Information Systems and I am currently <br> learning to become a fullstack developer!</p>
+                <div class="wrapper">
+                    <a href="#"><span>Contact Me!</span></a>
+                </div>
+                
+            </div>
+            <div class="backgroundDiv">
+                <div class="background"></div>
+                <div class="content"></div>
+            </div>
             
-            <h1>Nice to meet you!</h1>
-            <h1>I'm Guilherme Drummond.</h1>
-            <p>I have a bachelor's degree in Information Systems and I am currently constantly learning to become a fullstack developer!</p>
-            <button class="contato">Contact Me</button>
         </div>
         <hr class="line">
         <div class="skills">
             <div class="frontSkills">
+                <img src="assets/logo html.png" class="logoLinguagens" alt="">
                 <div class="skillStyle">
                     <span>HTML</span>
                     <label for="">2 years</label>
                 </div>
+                <img src="assets/CSS3_logo.svg.png" class="logoLinguagens" alt="">
                 <div class="skillStyle">
                     <span>CSS</span>
                     <label for="">2 years</label>
                 </div>
+                <img src="assets/JavaScript-logo.png" class="logoLinguagens" alt="">
                 <div class="skillStyle">
                     <span>Javascript</span>
                     <label for="">1 year</label>
                 </div>
             </div>
             <div class="backSkills">
+                <img src="assets/ReactLogo.wine.png" class="logoLinguagens2" alt="">
                 <div class="skillStyle">
                     <span>React</span>
                     <label for="">Comming Soon</label>
                 </div>
+                <img src="assets/Typescript_logo_2020.svg.png" class="logoLinguagens2" alt="">
                 <div class="skillStyle">
                     <span>TypeScript</span>
                     <label for="">Comming Soon</label>
                 </div>
+                <img src="assets/nextJs-logo.png" class="logoLinguagens2" alt="">
                 <div class="skillStyle">
                     <span>Next.js</span>
                     <label for="">Comming Soon</label>
                 </div>
             </div>
         </div>
-        <hr class="line">
     </header>
+    <img id="seta" src="assets/setas-branca.png" alt="">
     <main class="projects">
         
-        <h1>Projects</h1>
+        <h1 style="margin-top: 60px;">My Projects</h1>
         <div class="projeto1">
             <div class="projectDiv">
-                <label for="">project 1</label>
+                <label for="">GitHub Finder</label>
                 <img src="/assets/tela projeto.png" alt="">
             </div>
-            <div class="projectDiv">
-                <label for="">project 2</label>
-                <img src="/assets/tela projeto.png" alt="">
-            </div>
-        </div>
-        <div class="projeto2">
-            <div class="projectDiv">
-                <label for="">project 3</label>
-                <img src="/assets/tela projeto.png" alt="">
-            </div>
-            <div class="projectDiv">
-                <label for="">project 4</label>
-                <img src="/assets/tela projeto.png" alt="">
-            </div>
-        </div>
-
+        </div>  
+        <img style="margin-bottom: 20px;" id="seta" src="assets/setas-branca.png" alt="">
     </main>
-
+    
     <footer>
-       
-        <form action="" class="inputs">
-            <h1>Contact</h1>
-            <label for="">Name:</label>
-            <input type="text">
-            <label for="">E-mail:</label>
-            <input type="email">
-            <label for="">Message:</label>
-            <input type="text" class="message">
-            <button class="submit">Enviar</button>
+
+        <div class="contactText">
+            <h1>Contact me</h1>
+            <p>Olá! Se você chegou até aqui, é porque está considerando entrar em contato conosco - e isso é incrível! Estamos ansiosos para saber mais sobre você e como podemos ajudar. Seja para discutir uma ideia, solicitar um orçamento ou simplesmente trocar algumas palavras, estamos aqui para ouvir.</p>
+        </div>
+        <form class="form-contato">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+            </div>
+            <div class="wrapper" id="enviarButton">
+                <a href="#"><span>Enviar</span></a>
+            </div>
         </form>
     </footer>
     
