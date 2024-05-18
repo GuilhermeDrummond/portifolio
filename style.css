@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -7,53 +10,67 @@ body {
     font-family: sans-serif;
 }
 
-.logoLinguagens{
-    width: 45px;
-    margin-right: -130px;
+span {
+    font-weight: bold;
 }
 
-.logoLinguagens2{
-    width: 60px;
-    margin-right: -100px;
+label{
+    font-size: small;
+}
+p{
+    font-size: large;
+    width: 65%;
+    text-align: justify;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px
+}
+
+.logoLinguagens{
+    width: 45px;
 }
 
 .apresentação{
     display: flex;
-    gap: 100px;
-    margin-top: 100px;
+    align-items: flex-start;
     color: aliceblue;
+    width: 60%;
 }
 .textHeaderDiv{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 65px;
+    font-size: xx-large;
 }
 .backgroundDiv {
     border-radius: 20px;
-    margin-top: 20px;
-    width: 300px; /* Define a largura da imagem */
-    height: 360px;
-    background-image: url('assets/3D_Animation_Style_A_white_blond_boy_a_little_fat_a_programmer_2\ \(1\).jpg'); /* Substitua pelo caminho da sua imagem */
+    width: 400px; /* Define a largura da imagem */
+    height: 400px;
+    background-image: url('assets/avatar.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Para cobrir todo o elemento */
     background-position: center; /* Para centralizar a imagem */
     z-index: -1; /* Coloca a imagem atrás de outros elementos */
 }
 
-header {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
+    margin-top: 60px;
+    height: 100%;
 }
 
 .wrapper{
-    margin-top: 13%;
-    margin-left: 100px;
+    margin-top: 10%;
     transform: translate(-50%, -50%);
+    margin-left: 34%;
   }
-  
-  a{
+
+.a{
     display: block;
     width: 150px;
     height: 40px;
@@ -69,12 +86,12 @@ header {
     transition: all .35s;
   }
   
-  a span{
+  .a span{
     position: relative;
     z-index: 2;
   }
   
-  a:after{
+  .a:after{
     position: absolute;
     content: "";
     top: 0;
@@ -85,20 +102,13 @@ header {
     transition: all .35s;
   }
   
-  a:hover{
+  .a:hover{
     color: #fff;
   }
   
-  a:hover:after{
+  .a:hover:after{
     width: 100%;
   }
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-}
 
 footer{
     display: flex;
@@ -107,45 +117,59 @@ footer{
     flex-direction: row;
     background-color: cadetblue;
     height: 650px;
-    width: 70%;
+    width: 80%;
 }
 
 #seta{
-    width: 40px;
-    margin-top: 60px; 
+    width: 16px;
+    animation: moveUpDown 2s infinite alternate ease-in-out;
+}
+
+#setaCarousel {
+    width: 25px;
+    margin-top: 4px;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 button {
     display: block;
-    width: 150px;
+    width: 40px;
     height: 40px;
-    line-height: 40px;
-    font-size: 15px;
-    font-family: sans-serif;
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
-    letter-spacing: 2px;
-    text-align: center;
-    transition: all .35s;
     cursor: pointer;
-    margin-left: 20px;
     border-radius: 10px;
     top: 20px;
+    border: none;
+    background-color: transparent;
 }
 
 
 .line {
-    width: 70%; 
+    width: 75%; 
     height: 1px; 
     background-color: aliceblue; 
     border: none; 
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 
 .skills{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: aliceblue;
-    width: 80%;
+    width: 60%;
+    gap: 30px;
     margin-top: 30px;
 }
 
@@ -153,50 +177,50 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 170px;  
-    margin-right: 40px;
-}
-
-.backSkills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 110px;
-    margin-top: 50px;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 80px;
 }
 
 .skillStyle{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    font-size: 23px;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    gap: 8px;
+    font-family: sans-serif;
+    font-size: medium;
+
 }
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: aliceblue;
     background-color: rgb(20, 126, 126);
     width: 100%;
     gap: 30px;
     margin-top: 30px;
+    height: 80vh;
+    padding: 35px;
 }
-.projeto1 {
-    display: flex;
-    gap: 200px;
-}
-
-.projeto2 {
-    display: flex;
-    gap: 200px;
-} 
 
 .projectDiv {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 70px;
+}
+
+#imagem {
+    width: 60%;
+    border-radius: 15px;
 }
 
 .form-contato {
@@ -205,21 +229,15 @@ button {
     align-items: center;
     background-color: rgb(20, 126, 126) ;
     border-radius: 10px;
-    padding: 40px;
-    width: 35%;
-    margin-left: 15%;
+    padding: 32px;
+    width: 30%;
+    margin-left: 10%;
     color: aliceblue;
 }
 
 .input-group {
     margin-bottom: 20px;
     width: 80%;
-}
-
-.label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
 }
 
 input[type="text"],
@@ -236,14 +254,20 @@ textarea {
     height: 150px; /* Defina a altura desejada para o input de mensagem */
 }
 
+#pContact {
+    width: 80%;
+    margin-top: 30px;
+}
+
 #enviarButton {
     margin-left: 80%;
     margin-top: 20px;
     margin-bottom: -20px;
 }
 .contactText {
-    width: 40%;
+    width: 37%;
     color: aliceblue;
-    font-size: x-large;
+    font-size: large;
     margin-top: -80px;
+    text-align: justify;
 }

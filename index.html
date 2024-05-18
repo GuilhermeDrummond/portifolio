@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
+    <div class="container">
         <div class="apresentação">
             <div class="textHeaderDiv">
-                <h1>Nice to meet you!</h1>
-                <h2>I'm Guilherme Drummond.</h2>
-                <p>I have a bachelor's degree in <br>Information Systems and I am currently <br> learning to become a fullstack developer!</p>
+                <h1>Nice to meet you! <br> I'm Guilherme Drummond.</h1>
+                <p>I have a bachelor's degree in Information Systems and I am currently learning to become a fullstack developer!</p>
                 <div class="wrapper">
-                    <a href="#"><span>Contact Me!</span></a>
+                    <a href="#formContato" class="a"><span>Contact Me!</span></a>
                 </div>
                 
             </div>
@@ -27,62 +28,65 @@
         </div>
         <hr class="line">
         <div class="skills">
+            <h1>Minhas Skills</h1>
             <div class="frontSkills">
-                <img src="assets/logo html.png" class="logoLinguagens" alt="">
                 <div class="skillStyle">
+                    <img src="assets/logo html.png" class="logoLinguagens" alt="">
                     <span>HTML</span>
                     <label for="">2 years</label>
                 </div>
-                <img src="assets/CSS3_logo.svg.png" class="logoLinguagens" alt="">
+                
                 <div class="skillStyle">
+                    <img src="assets/CSS3_logo.svg.png" class="logoLinguagens" alt="">
                     <span>CSS</span>
                     <label for="">2 years</label>
                 </div>
-                <img src="assets/JavaScript-logo.png" class="logoLinguagens" alt="">
+                
                 <div class="skillStyle">
+                    <img src="assets/JavaScript-logo.png" class="logoLinguagens" alt="">
                     <span>Javascript</span>
                     <label for="">1 year</label>
                 </div>
-            </div>
-            <div class="backSkills">
-                <img src="assets/ReactLogo.wine.png" class="logoLinguagens2" alt="">
                 <div class="skillStyle">
+                    <img src="assets/ReactLogo.wine.png" class="logoLinguagens" alt="">
                     <span>React</span>
                     <label for="">Comming Soon</label>
                 </div>
-                <img src="assets/Typescript_logo_2020.svg.png" class="logoLinguagens2" alt="">
+                
                 <div class="skillStyle">
+                    <img src="assets/Typescript_logo_2020.svg.png" class="logoLinguagens" alt="">
                     <span>TypeScript</span>
                     <label for="">Comming Soon</label>
                 </div>
-                <img src="assets/nextJs-logo.png" class="logoLinguagens2" alt="">
+                
                 <div class="skillStyle">
+                    <img src="assets/nextJs-logo.png" class="logoLinguagens" alt="">
                     <span>Next.js</span>
                     <label for="">Comming Soon</label>
                 </div>
             </div>
         </div>
-    </header>
-    <img id="seta" src="assets/setas-branca.png" alt="">
-    <main class="projects">
+    </div>
+    <a href="#projects"><img id="seta" src="assets/setas-branca.png" alt=""></a>
+    
+    <main id="projects" class="projects">
         
-        <h1 style="margin-top: 60px;">My Projects</h1>
-        <div class="projeto1">
-            <div class="projectDiv">
-                <label for="">GitHub Finder</label>
-                <img src="/assets/tela projeto.png" alt="">
-            </div>
-        </div>  
-        <img style="margin-bottom: 20px;" id="seta" src="assets/setas-branca.png" alt="">
+        <h1 >My Projects</h1>
+        <div class="projectDiv">
+            <button id="anterior"><img id="setaCarousel"src="assets/setaAnterior.png" alt=""></button>
+            <img id="imagem" src="assets/Projeto0.png" alt="Imagem">
+            <button id="proximo"><img id="setaCarousel"src="assets/setaProximo.png" alt=""></button>
+        </div>
+          
     </main>
     
     <footer>
 
         <div class="contactText">
             <h1>Contact me</h1>
-            <p>Olá! Se você chegou até aqui, é porque está considerando entrar em contato conosco - e isso é incrível! Estamos ansiosos para saber mais sobre você e como podemos ajudar. Seja para discutir uma ideia, solicitar um orçamento ou simplesmente trocar algumas palavras, estamos aqui para ouvir.</p>
+            <p id="pContact">Olá! Se você chegou até aqui, é porque está considerando entrar em contato conosco - e isso é incrível! Estamos ansiosos para saber mais sobre você e como podemos ajudar. Seja para discutir uma ideia, solicitar um orçamento ou simplesmente trocar algumas palavras, estamos aqui para ouvir.</p>
         </div>
-        <form class="form-contato">
+        <form id="formContato" class="form-contato">
             <div class="input-group">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -96,10 +100,10 @@
                 <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
             </div>
             <div class="wrapper" id="enviarButton">
-                <a href="#"><span>Enviar</span></a>
+                <a href="#" class="a"><span>Enviar</span></a>
             </div>
         </form>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
