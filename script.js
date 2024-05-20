@@ -1,4 +1,4 @@
-const imagens = ["assets/Projeto0.png", "assets/Projeto3.png", "assets/Projeto2.png", "assets/tela projeto.png"]; // Lista de URLs das imagens
+const imagens = ["assets/gif2.gif", "assets/gif1.gif", "assets/Projeto0.png"]; // Lista de URLs das imagens
 let indiceAtual = 0; // Índice da imagem atual
 
 const imgElement = document.getElementById("imagem");

@@ -51,7 +51,6 @@ h1 {
     background-image: url('assets/avatar.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Para cobrir todo o elemento */
     background-position: center; /* Para centralizar a imagem */
-    z-index: -1; /* Coloca a imagem atrás de outros elementos */
 }
 
 .container {
@@ -109,6 +108,23 @@ h1 {
   .a:hover:after{
     width: 100%;
   }
+
+.linkRepo {
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    margin-top: 30px;
+}
 
 footer{
     display: flex;
@@ -208,7 +224,7 @@ button {
     gap: 30px;
     margin-top: 30px;
     height: 80vh;
-    padding: 35px;
+    padding: 65px;
 }
 
 .projectDiv {
